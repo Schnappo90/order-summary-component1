@@ -1,0 +1,176 @@
+:root {
+/* Primary */
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Bright-purple: hsl(245, 75%, 71%);
+
+/* Neutral */
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:var(--Pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+h1,
+h2 {
+    color: var(--Dark-blue);
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding: 30px 0 20px 0; 
+}
+
+h2 {
+    font-size: 0.8rem;
+    font-size: 700;
+}
+
+p {
+    color: var(--Desaturated-blue);
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin: auto;
+}
+
+.price {
+    font-size: 0.8rem;
+}
+
+.order-sum p {
+    padding-bottom: 20px;
+    width: 75%;
+}
+
+a {
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+    color: hsl(245, 75%, 52%);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--Bright-purple);
+}
+
+
+
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+
+}
+
+
+.card-wrap {
+    background-color: white;
+    max-width: 328px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 30px 50px rgba(56, 41, 224, 0.1);
+}
+
+
+
+.card-header-bg {
+    background-image: url(images/illustration-hero.svg);
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+}
+
+.plan-wrap {
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    width: 85%;
+    margin: 0 auto 25px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.icon {
+    height: 45px;
+}
+
+.plan-type {
+    margin-left: -40px;
+}
+
+
+button.payment {
+    background-color: var(--Bright-blue);
+    width: 85%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    font-weight: 900;
+    font-size: 0.9rem;
+    box-shadow: 0 20px 30px rgba(56, 41, 224, 0.25);
+    cursor: pointer;
+}
+
+button.payment:hover {
+    background-color: var(--Bright-purple);
+    box-shadow: 0 20px 30px rgba(135, 126, 237, 0.23);
+    transition: all 0.2s;
+}
+
+button.cancel {
+    border: none;
+    background: none;
+    color: var(--Desaturated-blue);
+    padding: 25px 0 30px 0;
+    font-weight: 700;
+}
+
+button.cancel:hover {
+    cursor: pointer;
+    color: var(--Dark-blue);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media screen and (min-width: 1440px) {
+    .container {
+     background-image: url(images/pattern-background-desktop.svg);
+     background-size:contain;
+     background-repeat: no-repeat;
+    }
+    .card-wrap {
+        max-width: 375px;
+    }
+}
